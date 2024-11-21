@@ -39,7 +39,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 st.markdown(
     """
     <div class="textbox">
-        This is the "About Us" page!
+        This is the adoption page!
     </div>
     """,
     unsafe_allow_html=True
