@@ -136,11 +136,11 @@ page_bg_img = """
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# Add a textbox with "Adopt a Pet" text
+# Add a textbox with "Adopt a Dog today!" text
 st.markdown(
     """
     <div class="textbox">
-        Adopt a Pet
+        Adopt a Dog today!
     </div>
     """,
     unsafe_allow_html=True
