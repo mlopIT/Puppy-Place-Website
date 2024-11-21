@@ -9,14 +9,17 @@ def load_css(file_path):
 css_path = pathlib.Path("assets/css/style.css")
 load_css(css_path)
 
-# Using st.markdown with CSS to hide the default header and footer of the website
+# Using st.markdown with CSS to hide the default header of the website
 hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
+<style>
+#MainMenu {
+    visibility: hidden;
+}
+header {
+    visibility: hidden;
+}
+</style>
+"""
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # Custom CSS to change sidebar collapse button color
@@ -32,6 +35,7 @@ custom_sidebar_button_css = """
 <style>
 """
 st.markdown(custom_sidebar_button_css, unsafe_allow_html=True)
+
 
 # Add CSS for background, button area, and image slider styling
 page_bg_img = """
@@ -226,4 +230,27 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+footer_html = """
+    <div class="footer">
+        Copyright @ 2021: Streamlit
+    </div>
+"""
+st.markdown(footer_html, unsafe_allow_html=True)
+
+footer_container = st.container()
+with footer_container:
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.header("Contact Us")
+        st.markdown("<h4>Reach us at....<h4>", unsafe_allow_html=True)
+
+    with col2:
+        st.header("Resources")
+        st.markdown('<a>Report Animal Cruelty<a>', unsafe_allow_html=True)
+
+    with col3:
+        st.header("Social Media")
+        st.markdown('<a>Handle is ...<a>', unsafe_allow_html=True)
+
 st.sidebar.success("Select a page above.")
