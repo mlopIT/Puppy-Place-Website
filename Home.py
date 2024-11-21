@@ -1,10 +1,6 @@
 import streamlit as st
-st.title("Home Page")
-hide_title_style = """
-                <style>
-.reportview-container .main header { display: none; }
-</style>"""
-st.markdown(hide_title_style, unsafe_allow_html=True)
+
+# Using st.markdown with CSS to hide the default header and footer of the website
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
