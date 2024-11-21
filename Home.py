@@ -10,6 +10,19 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
+# Custom CSS to change sidebar collapse button color
+custom_sidebar_button_css = """
+<style>
+.st-emotion-cache-1rg1gxd {
+  font-weight: 400;
+  color: orange;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+<style>
+"""
+st.markdown(custom_sidebar_button_css, unsafe_allow_html=True)
 # Add CSS for background, button area, and image slider styling
 page_bg_img = """
 <style>
