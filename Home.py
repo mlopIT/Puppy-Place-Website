@@ -1,4 +1,12 @@
+import pathlib
+
+# Importing a custom font
 import streamlit as st
+def load_css(file_path):
+    with open(file_path) as f:
+        st.html(f"<style>{f.read()}</style>")
+css_path = pathlib.Path("assets/css/style.css")
+load_css(css_path)
 
 # Using st.markdown with CSS to hide the default header and footer of the website
 hide_st_style = """
