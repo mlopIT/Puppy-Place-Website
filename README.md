@@ -1,6 +1,6 @@
 # Streamlit Tutorials
 
-#### Install
+#### Install Streamlit
 ```
 open Terminal/Command Prompt
 pip install streamlit
@@ -8,6 +8,6 @@ pip install streamlit
 
 #### Run
 ```
-open Terminal/Command Prompt
+in Terminal/Command Prompt
 python -m streamlit run Home.py
 ```
