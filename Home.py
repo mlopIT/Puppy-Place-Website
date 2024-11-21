@@ -1,4 +1,5 @@
 import pathlib
+import requests
 
 # Importing a custom font
 import streamlit as st
@@ -31,6 +32,7 @@ custom_sidebar_button_css = """
 <style>
 """
 st.markdown(custom_sidebar_button_css, unsafe_allow_html=True)
+
 # Add CSS for background, button area, and image slider styling
 page_bg_img = """
 <style>
@@ -201,5 +203,27 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+# Fetch a random dog fact from a public API
+def fetch_dog_fact():
+    try:
+        response = requests.get("https://dog-api.kinduff.com/api/facts")
+        if response.status_code == 200:
+            data = response.json()
+            return data["facts"][0]  # The fact is inside a list
+        else:
+            return "Couldn't fetch a dog fact at the moment. Please try again later!"
+    except Exception as e:
+        return f"Error: {str(e)}"
 
+# Below the last textbox, add the new textbox for the dog fact
+dog_fact = fetch_dog_fact()
+st.markdown(
+    f"""
+    <div class="howtoadopt-info">
+        <div class="howtoadopt-header">Did You Know?</div>
+        <div class="howtoadopt-body">{dog_fact}</div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 st.sidebar.success("Select a page above.")
