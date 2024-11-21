@@ -1,5 +1,5 @@
 import streamlit as st
-
+st.title('Adopt')
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
