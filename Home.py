@@ -243,11 +243,12 @@ with footer_container:
     col1, col2, col3 = st.columns(3)
     with col1:
         st.header("Contact Us")
-        st.markdown("<h4>Reach us at....<h4>", unsafe_allow_html=True)
 
     with col2:
         st.header("Resources")
         st.markdown('<a>Report Animal Cruelty<a>', unsafe_allow_html=True)
+        st.markdown('<a>Pet Loss & Grieving Services<a>', unsafe_allow_html=True)
+        st.markdown('<a>Pet Safety<a>', unsafe_allow_html=True)
 
     with col3:
         st.header("Social Media")
