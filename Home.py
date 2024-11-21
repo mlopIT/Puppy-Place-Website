@@ -86,12 +86,12 @@ page_bg_img = """
 
 .textbox {
     position: absolute;
-    top: 100px; /* Adjust the distance from the top */
+    top: 50px; /* Adjust the distance from the top */
     left: 50%;
     transform: translateX(-50%);
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow for better visibility */
     z-index: 999; /* Ensure it's above other content */
 }
