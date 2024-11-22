@@ -126,3 +126,33 @@ header {
     color: #555; /* Medium gray text color */
     line-height: 1.5; /* Improve readability */
 }
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
