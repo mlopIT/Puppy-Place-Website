@@ -14,8 +14,8 @@ with open(html_path, "r") as f:
     html_content = f.read()
 
 # TODO: Clean this up somehow
-st.markdown(f"<style>{css_content}</style>", unsafe_allow_html=True)
-st.markdown(html_content, unsafe_allow_html=True)
+st.html(f"<style>{css_content}</style>")
+st.html(html_content)
 
 
 # Fetch a random dog fact from a public API
