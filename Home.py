@@ -19,7 +19,8 @@ with open(html_path, "r", encoding="utf-8") as html_file:
 st.html(f"<style>{css_content}</style>")
 st.markdown(html_content, unsafe_allow_html=True)
 
-
+# Find a way to integrate dog fact fetch textbox html + css into index and css files.
+# Find out how to make dog fact textbox render before footer.
 # Fetch a random dog fact from a public API
 def fetch_dog_fact():
     try:
@@ -44,6 +45,5 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
 
 st.sidebar.success("Select a page above.")
