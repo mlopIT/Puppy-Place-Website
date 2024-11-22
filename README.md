@@ -9,7 +9,7 @@ python -m venv [name of venv]
 #### Install Streamlit
 ```
 open Terminal/Command Prompt
-pip install streamlit
+pip -r requirements.txt
 ```
 
 #### Run
