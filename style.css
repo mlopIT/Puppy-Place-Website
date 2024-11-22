@@ -22,9 +22,9 @@ header {
 
 [data-testid="stAppViewContainer"] {
     background-image: url("https://wallpaperaccess.com/full/3019614.jpg");
-    background-size: cover;  
-    background-position: center;  
-    background-attachment: local; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
 }
 
 .slider-frame {
