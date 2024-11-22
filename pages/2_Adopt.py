@@ -1,3 +1,5 @@
+import pathlib
+
 import streamlit as st
 st.title('Adopt')
 hide_st_style = """
@@ -8,6 +10,12 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
+def load_css(file_path):
+    with open(file_path) as f:
+        st.html(f"<style>{f.read()}</style>")
+css_path = pathlib.Path("assets/css/style.css")
+load_css(css_path)
 
 # Add CSS for background, button area, and image slider styling
 page_bg_img = """
