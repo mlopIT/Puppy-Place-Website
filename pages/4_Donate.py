@@ -62,7 +62,7 @@ if not st.session_state.warning_shown:
     warning_placeholder.warning("### This is a fake donation page, please do not enter any real credentials that can compromise your safety and privacy, thank you.")
 
     # Wait for 2 seconds and then clear the warning
-    time.sleep(2)
+    time.sleep(5)
 
     # Clear the warning message
     warning_placeholder.empty()
